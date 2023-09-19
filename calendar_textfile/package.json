@@ -1,0 +1,13 @@
+{
+  "name": "calendar-web-app", 
+  "version": "1.0.0",
+  "description": "I plan for this to be a calendar app that can both store entries and manage future reminders/tasks",
+  "main": "server.js",      
+  "scripts": {
+    "start": "node server.js"  
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "multer": "^1.4.2"    
+  }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "date": "2023-07-27",
+    "title": "Brandon's Bday",
+    "time": "3PM",
+    "text": "This was my birthday and I went out to eat japanese food, and this was my fit for the day...",
+    "photos": [
+      "/uploads/1694997406288-photo.jpg"
+    ]
+  },
+  {
+    "date": "2023-09-06",
+    "title": "",
+    "time": "",
+    "text": "No title, first day of school...",
+    "photos": [
+      "/uploads/1695100253421-photo.jpg"
+    ]
+  }
+]
