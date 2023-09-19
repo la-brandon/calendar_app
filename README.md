@@ -8,5 +8,9 @@ This should open the server if done correctly, now just head to https://localhos
 
 ...
 
+This project uses a text-based file to retrieve and store data, as opposed to a MYSql database alternative at the moment, to make things easier to test and access. Also makes for easier online deployment.
+
+...
+
 THIS IS A W.I.P
 &lt;3
