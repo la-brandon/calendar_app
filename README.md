@@ -5,4 +5,8 @@ A calendar I created with the intention to store memories from the past, and soo
 
 To run you must download files, and open a command prompt where these files are stored and run "node server.js". 
 This should open the server if done correctly, now just head to https://localhost:3000 to see the website in action!
+
+...
+
+THIS IS A W.I.P
 &lt;3
