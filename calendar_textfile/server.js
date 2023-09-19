@@ -51,8 +51,6 @@ app.get("/api/journal/:date", async (req, res) => {
 app.post("/api/journal", upload.array("photos"), async (req, res) => {
   const { date, title, time, text } = req.body;
   const photoFiles = req.files;
-  console.log(title);
-  console.log(time);
   try {
     await createJournalEntryInFile(date, title, time, text, photoFiles); // Write data to the text file
     res.json({ success: true });

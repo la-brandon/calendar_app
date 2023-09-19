@@ -10,8 +10,55 @@ document.addEventListener("DOMContentLoaded", async function () {
   let currentMonth = new Date().getMonth();
   let currentYear = new Date().getFullYear();
 
-  // Sample journal data for demonstration purposes
+  // Photo files and container
+  const photoFiles = [];
+  let journalEntryContainer;
+
+  // The journal data is stored here
   const journalData = {};
+
+  async function initializeApp() {
+    // Event listener for the date of when a cell is clicked
+    calendarContainer.addEventListener("click", async function (event) {
+      const dateCell = event.target.closest(".date-cell");
+      const isCurrentMonth = dateCell.classList.contains("current-month");
+
+      if (isCurrentMonth) {
+        // Handle click only for dates in the current month
+        const date = dateCell.getAttribute("data-date");
+        generateDayData(dateCell);
+      }
+    });
+
+    // Event listener for the previous button
+    prevBtn.addEventListener("click", function () {
+      currentMonth--;
+      if (currentMonth < 0) {
+        currentMonth = 11;
+        currentYear--;
+      }
+      generateCalendar(currentMonth, currentYear);
+    });
+
+    // Event listener for the next button
+    nextBtn.addEventListener("click", function () {
+      if (
+        currentMonth == new Date().getMonth() &&
+        currentYear == new Date().getFullYear()
+      ) {
+      } else {
+        currentMonth++;
+        if (currentMonth > 11) {
+          currentMonth = 0;
+          currentYear++;
+        }
+        generateCalendar(currentMonth, currentYear);
+      }
+    });
+
+    // Fetch existing journal entries
+    await fetchExistingJournalEntries();
+  }
 
   // Function to fetch existing journal entries
   async function fetchExistingJournalEntries() {
@@ -56,47 +103,6 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
     generateSidebar();
   }
-
-  // Event listener for the date of when a cell is clicked
-  calendarContainer.addEventListener("click", async function (event) {
-    const dateCell = event.target.closest(".date-cell");
-    const isCurrentMonth = dateCell.classList.contains("current-month");
-
-    if (isCurrentMonth) {
-      // Handle click only for dates in the current month
-      const date = dateCell.getAttribute("data-date");
-      generateDayData(dateCell);
-    }
-  });
-
-  // Event listener for the previous button
-  prevBtn.addEventListener("click", function () {
-    currentMonth--;
-    if (currentMonth < 0) {
-      currentMonth = 11;
-      currentYear--;
-    }
-    generateCalendar(currentMonth, currentYear);
-  });
-
-  // Event listener for the next button
-  nextBtn.addEventListener("click", function () {
-    if (
-      currentMonth == new Date().getMonth() &&
-      currentYear == new Date().getFullYear()
-    ) {
-    } else {
-      currentMonth++;
-      if (currentMonth > 11) {
-        currentMonth = 0;
-        currentYear++;
-      }
-      generateCalendar(currentMonth, currentYear);
-    }
-  });
-
-  const photoFiles = [];
-  let journalEntryContainer;
 
   // Function to display data for that day...
   async function generateDayData(dateCell) {
@@ -222,7 +228,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     });
   }
 
-  async function showJournalEntry(date, journalEntry) {
+  function showJournalEntry(date, journalEntry) {
     console.log("Should be showing something...");
     // Clear previous entries
     journalContainer.innerHTML = "";
@@ -231,7 +237,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     journalEntryContainer.classList.add("journal-entry-container");
     console.log(journalEntry);
 
-    if (journalEntry && journalEntry.text && journalEntry.photos) {
+    if (journalEntry) {
       const journalEntryHTML = `
       <div class="journal-entry">${journalEntry.text}</div>
       <div class="journal-photo">
@@ -242,8 +248,6 @@ document.addEventListener("DOMContentLoaded", async function () {
     `;
 
       journalEntryContainer.innerHTML = journalEntryHTML;
-    } else {
-      showSubmissionForm(date);
     }
     journalContainer.appendChild(journalEntryContainer);
   }
@@ -337,7 +341,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       const dateLink = document.createElement("li");
       if (dateEntry.title != "") {
         // Display title and date instead if there is a title...
-        console.log("Getting here?");
+        // console.log("Getting here?");
         dateLink.innerHTML = `<a href="#" class="date-link" data-date="${dateEntry.date}">${dateEntry.title} - ${dateEntry.date}</a>`;
       } else {
         dateLink.innerHTML = `<a href="#" class="date-link" data-date="${dateEntry.date}">${dateEntry.date}</a>`;
@@ -384,6 +388,6 @@ document.addEventListener("DOMContentLoaded", async function () {
     dateCell.appendChild(iconContainer);
   }
 
-  // Fetch existing journal entries when the page loads
-  await fetchExistingJournalEntries();
+  // Initialize the app !!
+  initializeApp();
 });
