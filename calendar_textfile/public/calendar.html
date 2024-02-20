@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Machine</title>
+    <link rel="stylesheet" href="calendar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zilla+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/76df38c4fe.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="header-container">
+      <button id="toggleSidebar" aria-label="Toggle Sidebar">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <h1>Memory Machine</h1>
+    </div>
+    <div class="sidebar">
+      <div class="sidebar-container">
+        <div id="memories">
+          <h2>Memories</h2>
+          <ul></ul>
+        </div>
+        <div id="reminders">
+          <h2>Reminders</h2>
+          <ul></ul>
+        </div>
+      </div>
+    </div>
+    <div class="calendar-container">
+      <div class="calendar-header">
+        <button class="prev-btn" aria-label="Previous Month">&lt;</button>
+        <div class="month-year" id="month-year-display">
+          <!-- The month and year will be displayed here -->
+        </div>
+        <button class="next-btn" aria-label="Next Month">&gt;</button>
+      </div>
+      <div class="calendar" id="calendar">
+        <!-- Your calendar content goes here -->
+      </div>
+    </div>
+    <div id="popup-container" class="popup-container">
+      <div id="popup-content" class="popup-content">
+        <!-- Content goes here -->
+        <button id="popup-close" class="popup-close">Close</button>
+      </div>
+    </div>
+    <script src="calendar.js"></script>
+  </body>
+</html>

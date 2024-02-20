@@ -1,0 +1,218 @@
+[
+  {
+    "date": "2023-07-27",
+    "title": "Brandon's Bday",
+    "time": "3PM",
+    "text": "This was my birthday and I went out to eat japanese food, and this was my fit for the day...",
+    "photos": [
+      "/uploads/1694997406288-photo.jpg"
+    ]
+  },
+  {
+    "date": "2023-03-21",
+    "title": "Nancy's Bday",
+    "time": "3PM",
+    "text": "This day we went to party !!!",
+    "photos": [
+      "/uploads/1695100095200-photo.jpg"
+    ]
+  },
+  {
+    "date": "2023-09-06",
+    "title": "",
+    "time": "",
+    "text": "No title, first day of school...",
+    "photos": [
+      "/uploads/1695100253421-photo.jpg"
+    ]
+  },
+  {
+    "date": "2023-09-13",
+    "title": "",
+    "time": "",
+    "text": "test",
+    "photos": [
+      "/uploads/1699349687863-test.png"
+    ]
+  },
+  {
+    "date": "2023-09-13",
+    "title": "",
+    "time": "",
+    "text": "test",
+    "photos": [
+      "/uploads/1699349690812-test.png"
+    ]
+  },
+  {
+    "date": "2023-09-13",
+    "title": "",
+    "time": "",
+    "text": "test",
+    "photos": [
+      "/uploads/1699349691161-test.png"
+    ]
+  },
+  {
+    "date": "2023-09-13",
+    "title": "",
+    "time": "",
+    "text": "test",
+    "photos": [
+      "/uploads/1699349691354-test.png"
+    ]
+  },
+  {
+    "date": "2023-09-13",
+    "title": "",
+    "time": "",
+    "text": "test",
+    "photos": [
+      "/uploads/1699349691543-test.png"
+    ]
+  },
+  {
+    "date": "2023-09-13",
+    "title": "",
+    "time": "",
+    "text": "test",
+    "photos": [
+      "/uploads/1699349691705-test.png"
+    ]
+  },
+  {
+    "date": "2023-09-13",
+    "title": "",
+    "time": "",
+    "text": "test",
+    "photos": [
+      "/uploads/1699349691880-test.png"
+    ]
+  },
+  {
+    "date": "2023-09-13",
+    "title": "",
+    "time": "",
+    "text": "test",
+    "photos": [
+      "/uploads/1699349692039-test.png"
+    ]
+  },
+  {
+    "date": "2023-09-13",
+    "title": "",
+    "time": "",
+    "text": "test",
+    "photos": [
+      "/uploads/1699349701305-test.png"
+    ]
+  },
+  {
+    "date": "2023-09-13",
+    "title": "",
+    "time": "",
+    "text": "test",
+    "photos": [
+      "/uploads/1699349701878-test.png"
+    ]
+  },
+  {
+    "date": "2023-09-13",
+    "title": "",
+    "time": "",
+    "text": "test",
+    "photos": [
+      "/uploads/1699349702073-test.png"
+    ]
+  },
+  {
+    "date": "2023-09-13",
+    "title": "",
+    "time": "",
+    "text": "test",
+    "photos": [
+      "/uploads/1699349702254-test.png"
+    ]
+  },
+  {
+    "date": "2023-09-13",
+    "title": "",
+    "time": "",
+    "text": "test",
+    "photos": [
+      "/uploads/1699349702450-test.png"
+    ]
+  },
+  {
+    "date": "2023-09-13",
+    "title": "",
+    "time": "",
+    "text": "test",
+    "photos": [
+      "/uploads/1699349702644-test.png"
+    ]
+  },
+  {
+    "date": "2023-09-13",
+    "title": "",
+    "time": "",
+    "text": "test",
+    "photos": [
+      "/uploads/1699349702822-test.png"
+    ]
+  },
+  {
+    "date": "2023-09-13",
+    "title": "",
+    "time": "",
+    "text": "test",
+    "photos": [
+      "/uploads/1699349703025-test.png"
+    ]
+  },
+  {
+    "date": "2023-09-20",
+    "title": "",
+    "time": "",
+    "text": "asd",
+    "photos": [
+      "/uploads/1699350290824-E72JmZpUYAQjKYS.jpg"
+    ]
+  },
+  {
+    "date": "2023-09-05",
+    "title": "",
+    "time": "",
+    "text": "wee",
+    "photos": [
+      "/uploads/1699350391355-E72JmZoVkAMdC0Y.jfif"
+    ]
+  },
+  {
+    "date": "2023-09-12",
+    "title": "",
+    "time": "",
+    "text": "woo",
+    "photos": [
+      "/uploads/1699350458590-E72JmZpVIAErBdd.jpg"
+    ]
+  },
+  {
+    "date": "2023-12-25",
+    "title": "Christmas Day",
+    "time": "",
+    "text": "PARTY ON CHRISTMAS HOPEFULLY",
+    "photos": [
+      "/uploads/1703213553024-LWCC_dd.png"
+    ]
+  },
+  {
+    "date": "2024-04-25",
+    "title": "hayli bday",
+    "time": "",
+    "text": "",
+    "photos": [
+      "/uploads/1704859240646-final_0.0001_plot.png"
+    ]
+  }
+]

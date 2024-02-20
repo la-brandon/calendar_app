@@ -1,0 +1,230 @@
+body {
+  font-family: "Zilla Slab", serif;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #333;
+  padding: 5px;
+  margin: -8px;
+  background-color: #c4d7f2;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+.sidebar-container {
+  height: 500px;
+  width: 300px;
+  margin-top: -20px;
+}
+
+.calendar-container {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 9px;
+  text-align: center;
+  transition: margin-left 0.5s;
+  height: 1070px;
+  margin-left: 344px;
+  background-color: #f0f7ee;
+}
+
+.calendar-header {
+  width: 600px;
+  display: flex;
+  align-self: center;
+  margin-bottom: 10px;
+  border: 2px solid black;
+}
+
+.month-year {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.calendar {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  gap: 5px;
+  align-self: center;
+}
+
+.date-cell {
+  font-size: 30px;
+  text-align: center;
+  opacity: 1;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.date-cell.previous-month,
+.date-cell.next-month {
+  opacity: 0.6;
+}
+
+.date-cell .fa-thumbtack {
+  font-size: 25px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  transform: rotate(33deg);
+}
+
+.journal-entry {
+  width: 630px;
+}
+
+#journal-container {
+  max-width: 600px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+  max-height: 675px;
+  margin-right: 2%;
+  border-radius: 30px;
+}
+
+.journal-photo {
+  grid-template-columns: repeat(var(--num-columns, 1), 1fr);
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 100%;
+}
+
+.journal-photo img {
+  max-width: 600px;
+  max-height: 600px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.journal-entry {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+#journal-form {
+  margin-top: 10px;
+}
+
+#journal-text {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+#photo-upload {
+  margin-bottom: 10px;
+}
+
+#journal-form button {
+  display: block;
+  margin: 0 auto;
+}
+
+#memories,
+#reminders {
+  width: 600px;
+  padding: 10px;
+}
+
+#journal-entry-list {
+  list-style: none;
+  padding: 0;
+}
+
+#journal-entry-list li {
+  margin-bottom: 10px;
+}
+
+#journal-entry-list a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+#journal-entry-list a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.sidebar {
+  width: 350px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  border-right: 1px solid #333;
+  margin-top: 8px;
+  background-color: #f0f7ee;
+}
+
+.sidebar.hidden {
+  left: -352px;
+}
+
+#toggleSidebar {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+}
+
+.calendar-container.hidden {
+  margin-left: -8px;
+}
+
+.popup-container {
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup-content {
+  max-width: 50%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-height: 80%;
+}
+
+.popup-close {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.date-cell-popup {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
